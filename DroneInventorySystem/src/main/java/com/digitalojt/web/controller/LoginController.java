@@ -23,6 +23,7 @@ import lombok.RequiredArgsConstructor;
 @Controller
 @RequiredArgsConstructor
 public class LoginController {
+//	基本ログイン情報:user,pwd
 
 	/** ログインID */
 	private static final String LOGIN_ID = "user";

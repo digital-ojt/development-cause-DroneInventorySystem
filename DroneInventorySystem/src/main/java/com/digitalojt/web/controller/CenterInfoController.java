@@ -63,6 +63,8 @@ public class CenterInfoController {
 	/**
 	 * 検索結果表示
 	 * 
+	 * (追記)検索はうまくできるけど検索条件が保持されていない。
+	 * 
 	 * @param model
 	 * @param form
 	 * @return
