@@ -3,8 +3,7 @@ package com.digitalojt.web.consts;
 /**
  * 検索条件定数クラス
  *
- * @author your name
- * 
+ * @author KaitoDokan
  */
 public class SearchParams {
 

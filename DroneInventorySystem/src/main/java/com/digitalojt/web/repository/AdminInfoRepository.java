@@ -8,7 +8,8 @@ import com.digitalojt.web.entity.AdminInfo;
 /**
  * 管理者情報テーブルリポジトリー
  *
- * @author your name
+ * @author KaitoDokan
+ * 
  * 
  */
 @Repository
