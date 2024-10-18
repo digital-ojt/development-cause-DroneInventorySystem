@@ -28,4 +28,8 @@ public class UrlConsts {
 
 	// 認証不要画面
 	public static final String[] NO_AUTHENTICATION = {LOGIN, AUTHENTICATE};
+	
+	//以下追記↓
+	//分類情報管理画面
+	public static final String CLASS_INFO = "/admin/classInfo";
 }
