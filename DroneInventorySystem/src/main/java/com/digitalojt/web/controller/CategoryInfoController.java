@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import com.digitalojt.web.consts.UrlConsts;
 
 /**
- * 在庫一覧画面コントローラークラス
+ * 分類情報画面コントローラークラス
  * 
  * @author haruka matano
  *
  */
 @Controller
-public class ClassInfoController extends AbstractController {
+public class CategoryInfoController extends AbstractController {
 
 	/**
 	 * 初期表示
