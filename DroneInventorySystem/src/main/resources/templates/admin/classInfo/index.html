@@ -8,7 +8,18 @@
   </head>
 
   <body>
-  Hello World
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">分類情報管理</h6>
+        </div>
+        <div class="card-body" style="text-align: center;"> <!-- カードボディに中央揃えを追加 -->
+            <table border="1" style="margin: auto;" width="50%">
+                <tr th:each="item : ${categoryInfoList}">
+                    <th> [[${item.categoryName}]] </th>
+                </tr>
+            </table>
+        </div>
+    </div>
     
   </body>
 </html>
