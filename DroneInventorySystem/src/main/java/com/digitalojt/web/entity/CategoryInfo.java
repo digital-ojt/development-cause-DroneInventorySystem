@@ -9,7 +9,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * 管理者情報Entity
+ * 分類情報Entity
  * 
  * @author haruka matano
  *
