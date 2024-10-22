@@ -8,7 +8,6 @@ package com.digitalojt.web.consts;
 
 public enum Category 
 {	
-	
     FRAME("フレーム"),
     PROPELLER("プロペラ"),
     MOTOR("電動モーター"),

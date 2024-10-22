@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import com.digitalojt.web.consts.Category;
 import com.digitalojt.web.consts.UrlConsts;
-import com.digitalojt.web.service.CategoryInfoService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -25,9 +24,6 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class CategoryInfoController 
 {
-	
-	/** センター情報 サービス */
-	private final CategoryInfoService categoryInfoService;
 	
 	/**
 	 * 初期表示
