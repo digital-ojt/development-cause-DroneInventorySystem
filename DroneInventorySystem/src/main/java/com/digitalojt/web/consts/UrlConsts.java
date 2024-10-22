@@ -31,5 +31,8 @@ public class UrlConsts {
 	
 	//以下追記↓
 	//分類情報管理画面
-	public static final String CLASS_INFO = "/admin/classInfo";
+	public static final String CATEGORY_INFO = "/admin/categoryInfo";
+	
+	//分類情報管理画面 検索
+	public static final String CATEGORY_INFO_SEARCH = "/admin/categoryInfo/search";
 }

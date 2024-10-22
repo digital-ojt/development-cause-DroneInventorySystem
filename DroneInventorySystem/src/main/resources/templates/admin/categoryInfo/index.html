@@ -14,6 +14,22 @@
          </div>
     </div>
     
+	<center>
+		<form method="post" th:action="@{'/admin/categoryInfo/search'}" >
+        
+        <!-- 検索条件に下線 -->
+        <u>検索条件</u>&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- 分類名-->
+        分類名 &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text">&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- 検索ボタン-->
+        <input type="submit" value="検索" style="background-color:rgb(255, 255, 128);">
+    	
+    	</form>
+    </center>
+	
+	<br>
+    
      <table border="1"  width="50%" style="margin: 0 auto; text-align: center;">
     	<tr th:each="category : ${categoryInfoList}">
         <td th:text="${category.name}"></td>
