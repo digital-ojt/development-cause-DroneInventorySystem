@@ -24,13 +24,13 @@ public class CategoryInfoService
 	private final CategoryInfoRepository repository;
 	
 	/**
-	 * 在庫センター情報を全件検索で取得
+	 * 分類情報を全件検索で取得
 	 * 
 	 * @return
 	 */
 	public List<CategoryInfo> getCategoryInfoData() {
 
-		// 在庫センター情報作成
+		// 分類情報作成
 		List<CategoryInfo> categoryInfoList = createCategoryInfo();
 
 		return categoryInfoList;

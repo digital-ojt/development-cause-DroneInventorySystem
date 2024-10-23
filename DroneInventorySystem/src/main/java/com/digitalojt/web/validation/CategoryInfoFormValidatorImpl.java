@@ -18,59 +18,38 @@ public class CategoryInfoFormValidatorImpl implements ConstraintValidator<Catego
 	@Override
 	public boolean isValid(CategoryInfoForm form, ConstraintValidatorContext context) 
 	{
-
-		// バリデーションチェックの前に
-		System.out.println("入力: " + form.getCategoryName());
 		
 		boolean allFieldsEmpty = StringUtils.isEmpty(form.getCategoryName());
-
-		System.out.println("フィールドが空かを確認中");		
+	
 		// フィールドが空かをチェック
 		if (allFieldsEmpty) 
-		{
-			System.out.println("フィールドは空です。"); 
+		{ 
 			context.disableDefaultConstraintViolation();
 			context.buildConstraintViolationWithTemplate(ErrorMessage.CATEGORY_EMPTY_ERROR_MESSAGE)
 					.addConstraintViolation();
 			return false;
 		}
-		else 
-		{
-	        System.out.println("フィールドは空ではありません。"); 
-	    }
 		
 		// 分類名のチェック
 		if (form.getCategoryName() != null) {
 			
-			System.out.println("不正文字列かを確認中");
 			// 不正文字列チェック
 			if (ParmCheckUtil.isParameterInvalid(form.getCategoryName())) 
 			{
-				System.out.println("不正文字列が検出されました。"); 
 				context.disableDefaultConstraintViolation();
 				context.buildConstraintViolationWithTemplate(ErrorMessage.CATEGORY_INVALID_INPUT_ERROR_MESSAGE)
 						.addConstraintViolation();
 				return false;
 			}
-			else 
-			{
-	            System.out.println("不正文字列はありません。"); 
-	        }
 			
-			System.out.println("規定文字数か確認中");
 			// 文字数チェック
-			if (form.getCategoryName().length() > SearchParams.MAX_LENGTH) 
+			if (form.getCategoryName().length() > SearchParams.SEARCH_MAX_LENGTH) 
 			{
-				System.out.println("文字数が規定を超えています。"); 
 				context.disableDefaultConstraintViolation();
 				context.buildConstraintViolationWithTemplate(ErrorMessage.CATEGORY_LENGTH_ERROR_MESSAGE)
 						.addConstraintViolation();
 				return false;
 			}
-			else 
-			{
-	            System.out.println("文字数は問題ありません。"); 
-	        }
 		}
 
 		// その他のバリデーションに問題なければtrueを返す

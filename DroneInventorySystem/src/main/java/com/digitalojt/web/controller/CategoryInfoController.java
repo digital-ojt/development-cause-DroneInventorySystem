@@ -81,7 +81,7 @@ public class CategoryInfoController
 			// 分類情報をセット
 			model.addAttribute("categoryInfoEnum", categoryInfoEnum);
 			
-			// 在庫センター情報画面に表示するデータを取得
+			// 分類情報画面に表示するデータを取得
 			List<CategoryInfo> categoryInfoList = categoryInfoService.getCategoryInfoData();
 
 			// 画面表示用に商品情報リストをセット

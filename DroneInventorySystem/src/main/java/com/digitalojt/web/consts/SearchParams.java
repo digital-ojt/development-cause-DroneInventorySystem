@@ -8,6 +8,6 @@ package com.digitalojt.web.consts;
  */
 public class SearchParams {
 
-	// 最大文字数
-	public static final int MAX_LENGTH = 15;
+	// 検索最大文字数
+	public static final int SEARCH_MAX_LENGTH = 15;
 }
