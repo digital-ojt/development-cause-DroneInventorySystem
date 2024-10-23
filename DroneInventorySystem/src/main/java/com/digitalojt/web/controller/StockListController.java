@@ -8,7 +8,7 @@ import com.digitalojt.web.consts.UrlConsts;
 /**
  * 在庫一覧画面コントローラークラス
  * 
- * @author Aoyagi Hirohi
+ * @author TEST1
  *
  */
 @Controller
