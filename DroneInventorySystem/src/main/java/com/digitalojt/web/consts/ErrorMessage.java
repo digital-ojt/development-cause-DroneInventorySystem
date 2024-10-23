@@ -22,4 +22,15 @@ public class ErrorMessage {
 
 	// 文字超過に関するエラーメッセージ
 	public static final String CENTER_NAME_LENGTH_ERROR_MESSAGE = "centerName.length.wrongInput";
+	
+	/*追記*/
+	// 空文字検索に関するエラーメッセージ
+	public static final String CATEGORY_EMPTY_ERROR_MESSAGE = "categoryName.empty";
+
+	// 文字超過に関するエラーメッセージ
+	public static final String CATEGORY_LENGTH_ERROR_MESSAGE = "categoryName.length.wrongInput";
+	
+	// 不正な文字列を使用した検索に関するエラーメッセージ
+	public static final String CATEGORY_INVALID_INPUT_ERROR_MESSAGE = "categoryName.invalid.input";
+	
 }
