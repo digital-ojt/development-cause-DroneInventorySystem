@@ -53,7 +53,7 @@ public class CategoryInfoFormValidatorImpl implements ConstraintValidator<Catego
 			}
 
 			// 文字数チェック
-			if (form.getCategoryName().length() > SearchParams.MAX_LENGTH) {
+			if (form.getCategoryName().length() > SearchParams.CATEGORY_MAX_LENGTH) {
 				context.disableDefaultConstraintViolation();
 				context.buildConstraintViolationWithTemplate(ErrorMessage.CATEGORY_NAME_LENGTH_ERROR_MESSAGE)
 						.addConstraintViolation();

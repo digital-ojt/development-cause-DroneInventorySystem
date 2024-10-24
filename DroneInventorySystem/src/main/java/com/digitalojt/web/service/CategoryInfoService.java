@@ -38,9 +38,9 @@ public class CategoryInfoService {
 	}
 
 	/**
-	 * 引数に合致する在庫センター情報を取得
+	 * 引数に合致する分類情報を取得
 	 * 
-	 * @param centerName
+	 * @param categoryName
 	
 	 * @return 
 	 */

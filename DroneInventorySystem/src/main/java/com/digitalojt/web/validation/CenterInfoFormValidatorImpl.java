@@ -46,7 +46,7 @@ public class CenterInfoFormValidatorImpl implements ConstraintValidator<CenterIn
 			}
 
 			// 文字数チェック
-			if (form.getCenterName().length() > SearchParams.MAX_LENGTH) {
+			if (form.getCenterName().length() > SearchParams.CENTER_MAX_LENGTH) {
 				context.disableDefaultConstraintViolation();
 				context.buildConstraintViolationWithTemplate(ErrorMessage.CENTER_NAME_LENGTH_ERROR_MESSAGE)
 						.addConstraintViolation();

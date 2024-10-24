@@ -5,7 +5,7 @@ import com.digitalojt.web.validation.CategoryInfoFormValidator;
 import lombok.Data;
 
 /**
- * 在庫センター情報画面のフォームクラス
+ * 分類情報画面のフォームクラス
  * 
  * @author KaitoDokan
  *
@@ -15,7 +15,7 @@ import lombok.Data;
 public class CategoryInfoForm {
 
 	/**
-	 * センター名
+	 * 分類名
 	 */
 	private String categoryName;
 
