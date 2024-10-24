@@ -11,7 +11,7 @@ import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 
 /**
- * 在庫センター情報画面のバリデーションチェック 実装クラス
+ * 分類情報画面のバリデーションチェック 実装クラス
  * 
  * @author KaitoDokan
  */
@@ -45,7 +45,7 @@ public class CategoryInfoFormValidatorImpl implements ConstraintValidator<Catego
 			}
 
 			// 不正文字列チェック
-			if (form.getCategoryName().equals(" ")|form.getCategoryName().equals("'")) {
+			if (form.getCategoryName().contains(" ")|form.getCategoryName().contains("'")) {
 				context.disableDefaultConstraintViolation();
 				context.buildConstraintViolationWithTemplate(ErrorMessage.INVALID_INPUT_ERROR_MESSAGE)
 						.addConstraintViolation();
