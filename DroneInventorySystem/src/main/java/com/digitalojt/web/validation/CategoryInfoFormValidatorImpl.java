@@ -44,6 +44,14 @@ public class CategoryInfoFormValidatorImpl implements ConstraintValidator<Catego
 				return false;
 			}
 
+			// 不正文字列チェック
+			if (form.getCategoryName().equals(" ")|form.getCategoryName().equals("'")) {
+				context.disableDefaultConstraintViolation();
+				context.buildConstraintViolationWithTemplate(ErrorMessage.INVALID_INPUT_ERROR_MESSAGE)
+						.addConstraintViolation();
+				return false;
+			}
+
 			// 文字数チェック
 			if (form.getCategoryName().length() > SearchParams.MAX_LENGTH) {
 				context.disableDefaultConstraintViolation();
