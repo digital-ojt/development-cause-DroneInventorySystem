@@ -102,6 +102,9 @@ public class CategoryInfoController
 		// 検索条件をセット
 		model.addAttribute("categoryInfoEnum", categoryInfoEnum);
 		
+		//Plus
+		model.addAttribute("categoryName", form.getCategoryName());
+		
 		return "admin/categoryInfo/index";
 	}
 //	

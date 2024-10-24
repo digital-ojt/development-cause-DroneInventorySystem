@@ -16,7 +16,8 @@ public enum InvalidCharacter {
     SEMICOLON(';'),
     DOLLAR_SIGN('$'),
     QUESTION_MARK('?'),
-    ASTERISK('*');
+    ASTERISK('*'),
+	SINGLE_QUOTE('\'');  
 
     private final char character;
 
