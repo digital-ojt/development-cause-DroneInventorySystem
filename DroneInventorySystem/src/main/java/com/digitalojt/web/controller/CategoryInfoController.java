@@ -87,6 +87,9 @@ public class CategoryInfoController
 			// 画面表示用に商品情報リストをセット
 			model.addAttribute("categoryInfoList", categoryInfoList);
 			
+			//検索情報の保持
+			model.addAttribute("categoryName", form.getCategoryName());
+			
 			return "admin/categoryInfo/index";
 		}
 		
@@ -102,8 +105,9 @@ public class CategoryInfoController
 		// 検索条件をセット
 		model.addAttribute("categoryInfoEnum", categoryInfoEnum);
 		
-		//Plus
 		model.addAttribute("categoryName", form.getCategoryName());
+		
+		
 		
 		return "admin/categoryInfo/index";
 	}
