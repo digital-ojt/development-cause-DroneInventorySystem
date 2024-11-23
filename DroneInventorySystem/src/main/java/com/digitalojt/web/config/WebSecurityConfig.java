@@ -9,7 +9,7 @@ import org.springframework.security.web.SecurityFilterChain;
 /**
  * WebSecurityConfig
  *
- * @author your name
+ * @author Kazuma Kuroki
  * 
  */
 @EnableWebSecurity
